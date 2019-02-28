@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormControl} from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-generalcontractorform',
@@ -8,16 +9,16 @@ import { FormGroup,FormControl} from '@angular/forms';
 })
 export class GeneralcontractorformComponent implements OnInit {
 
-  /*name, address, phone, email, company_name, city, state, zip_code, website */
+  /*name, address, phone, email, companyname, city, state, zipcode, website */
   generalContractorForm = new FormGroup({
     name: new FormControl(''),
     address: new FormControl(''),
     phone: new FormControl(''),
     email: new FormControl(''),
-    companyname: new FormControl(''),
+    company: new FormControl(''),
     city: new FormControl(''),
     state: new FormControl(''),
-    zipcode: new FormControl(''),
+    zip: new FormControl(''),
     website: new FormControl(''),
   });
 
