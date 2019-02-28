@@ -1,8 +1,52 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}
   </h1>
 </div>
+<br>
+<hr>
+<div class="ui-g-12 ui-md-4">
+  <h4>Date</h4>
+  <p-calendar [(ngModel)]="date1"  [showIcon]="true"></p-calendar>
+</div>
+<!-- company_name -->
+<div class="ui-inputgroup">
+  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+  <input type="text" pInputText placeholder="Project name">
+</div>
+<!-- address -->
+<div class="ui-inputgroup">
+  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+  <input type="text" pInputText placeholder="address">
+</div>
+<!-- city -->
+<div class="ui-inputgroup">
+  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+  <input type="text" pInputText placeholder="city">
+</div>
+<!-- state -->
+<div class="ui-inputgroup">
+  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+  <input type="text" pInputText placeholder="state">
+</div>
+<!-- zip code -->
+<div class="ui-inputgroup">
+  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+  <input type="text" pInputText placeholder="zipcode">
+</div>
+<hr>
 
-<router-outlet></router-outlet>
+<app-tiledistributorform></app-tiledistributorform>
+<app-architectform></app-architectform>
+<!-- <p-accordion>
+    <p-accordionTab  header="Tile Distributor">
+      <app-tiledistributorform></app-tiledistributorform>
+      Tile Distributor
+    </p-accordionTab>
+  <p-accordionTab  header="Architect">
+    <app-architectform></app-architectform>
+    Architect form
+  </p-accordionTab>
+</p-accordion>-->
+  <router-outlet></router-outlet>

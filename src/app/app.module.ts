@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule} from "@angular/forms";
+import { InputTextModule } from 'primeng/primeng';
+import { CalendarModule} from "primeng/primeng";
+import { InputMask } from 'primeng/primeng';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArchitectformComponent } from './architectform/architectform.component';
@@ -10,6 +13,8 @@ import { TilecontractorformComponent } from './tilecontractorform/tilecontractor
 import { ProductspecsformComponent } from './productspecsform/productspecsform.component';
 import { ProjectetaformComponent } from './projectetaform/projectetaform.component';
 import { InventorysourceformComponent } from './inventorysourceform/inventorysourceform.component';
+import { TiledistributorformComponent } from './tiledistributorform/tiledistributorform.component';
+import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -20,11 +25,17 @@ import { InventorysourceformComponent } from './inventorysourceform/inventorysou
     TilecontractorformComponent,
     ProductspecsformComponent,
     ProjectetaformComponent,
-    InventorysourceformComponent
+    InventorysourceformComponent,
+    TiledistributorformComponent,
+    InputMask,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    InputTextModule,
+    CalendarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

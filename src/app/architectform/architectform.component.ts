@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArchitectformComponent implements OnInit {
 
+  /*name, address, phone, email, company_name, city, state, zip_code, website */
+
   constructor() { }
 
   ngOnInit() {
