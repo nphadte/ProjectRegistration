@@ -1,3 +1,60 @@
-<p>
-  generalcontractorform works!
-</p>
+<h4>General Contractor</h4>
+<!-- /*name, address, phone, email, company_name, city, state, zip_code, website */ -->
+<form [formGroup]="generalContractorForm">
+
+  <!--
+    name: new FormControl(''),
+    address: new FormControl(''),
+    phone: new FormControl(''),
+    email: new FormControl(''),
+    companyname: new FormControl(''),
+    city: new FormControl(''),
+    state: new FormControl(''),
+    zipcode: new FormControl(''),
+    website: new FormControl(''),
+   -->
+  <div class="ui-inputgroup">
+    <i class="fa fa-user"></i>
+    <label>
+      Name:
+      <input class="ui-inputgroup-addon" type="text" formControlName="name">
+    </label>
+    <label> Address:
+      <input type="text" formControlName="address">
+    </label>
+    <!--<label>
+      Phone:
+      <input class="ui-inputgroup" type="text" formControlName="phone">
+    </label>
+    -->
+    <!-- phone -->
+  </div>
+
+  <div class="ui-inputgroup-addon">
+    <span>Phone</span>
+    <p-inputMask mask="(999) 999-9999? x99999" formControlName="phone"></p-inputMask>
+  </div>
+
+
+  <div class="ui-inputgroup-addon">
+    <label> Email address:
+      <input class="ui-inputgroup-addon" type="text" formControlName="email">
+    </label>
+    <label>
+      Company Name:
+      <input type="text" formControlName="companyname">
+    </label>
+    <label> city:
+      <input type="text" formControlName="city">
+    </label>
+    <label>
+      zipcode:
+      <input type="text" formControlName="zipcode">
+    </label>
+    <label> website:
+      <input type="text" formControlName="website">
+    </label>
+  </div>
+</form>
+<div>
+</div>

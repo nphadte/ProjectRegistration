@@ -6,6 +6,7 @@
 </div>
 <br>
 <hr>
+<hr>
 <div class="ui-g-12 ui-md-4">
   <h4>Date</h4>
   <p-calendar [(ngModel)]="date1"  [showIcon]="true"></p-calendar>
@@ -35,10 +36,15 @@
   <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
   <input type="text" pInputText placeholder="zipcode">
 </div>
-<hr>
-
+<div >
 <app-tiledistributorform></app-tiledistributorform>
+</div>
+<div>
+<app-generalcontractorform></app-generalcontractorform>
+</div>
+<div>
 <app-architectform></app-architectform>
+</div>
 <!-- <p-accordion>
     <p-accordionTab  header="Tile Distributor">
       <app-tiledistributorform></app-tiledistributorform>

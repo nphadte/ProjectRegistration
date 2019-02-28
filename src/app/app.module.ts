@@ -15,6 +15,7 @@ import { ProjectetaformComponent } from './projectetaform/projectetaform.compone
 import { InventorysourceformComponent } from './inventorysourceform/inventorysourceform.component';
 import { TiledistributorformComponent } from './tiledistributorform/tiledistributorform.component';
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
     ProjectetaformComponent,
     InventorysourceformComponent,
     TiledistributorformComponent,
-    InputMask,
+    InputMask
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,8 @@ import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
     FormsModule,
     InputTextModule,
     CalendarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
