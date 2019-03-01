@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
-
 @Component({
   selector: 'app-generalcontractorform',
   templateUrl: './generalcontractorform.component.html',
   styleUrls: ['./generalcontractorform.component.css']
 })
+
 export class GeneralcontractorformComponent implements OnInit {
 
   /*name, address, phone, email, companyname, city, state, zipcode, website */

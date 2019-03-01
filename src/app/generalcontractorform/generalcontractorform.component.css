@@ -1,0 +1,31 @@
+h4{
+  color: #c92c2c;
+  width: auto;
+}
+/*body .ui-inputgroup .ui-inputgroup-addon {
+  border-color: #a6a6a6;
+  background-color: #96c93d;
+  color: #848484;
+  padding: 0.429em;
+  min-width: 2em;
+}*/
+.ui-inputgroup-addon {
+  border-color: #a6a6a6;
+  background-color: #a6a6a6;
+  color: #1b81d7;
+  padding: 0.429em;
+  min-width: 2em;
+}
+
+.ui-inputgroup{
+  background-color: #966BD8;
+  border-color: #966BD8;
+  table-layout: auto;
+  -ms-layout-grid-mode: 
+}
+
+.form-group{
+  align-items: center;
+  -ms-layout-grid-mode: line;
+
+}

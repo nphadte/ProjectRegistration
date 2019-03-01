@@ -1,0 +1,45 @@
+<h4>Interior Designer</h4>
+<section  class="interiordesignerform">
+  <form   [formGroup]="interiorDesignerForm"   fxLayoutGap=""  fxLayout="row"  fxLayoutAlign="space-between" #f="ngForm">
+   
+    <mat-form-field>
+        <input  matInput type="text"  placeholder="Name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text"  placeholder="Address">
+    </mat-form-field>
+    <!-- mask the phone to accept correct phone values -->
+    <mat-form-field>
+        <input matInput type="text" placeholder="Phone">
+        <mat-hint>(999) 999-9999</mat-hint>
+        <mat-error>only digits </mat-error>
+    </mat-form-field>
+    <!-- mask the email to accept correct email values -->
+    <mat-form-field>
+        <input matInput type="email"  placeholder="Your email" >
+        <mat-hint>should be a valid email format</mat-hint>
+    </mat-form-field>
+    <mat-form-field>
+       <input matInput type="text" placeholder="Company Name">
+    </mat-form-field>
+    <mat-form-field>
+       <input matInput type="text" placeholder="city">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="State">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="zip">
+   </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="website">
+    </mat-form-field>
+   
+    <!--  <mat-form-field>
+      <mat-select placeholder="Select">
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field>  
+    -->
+  </form>
+</section>

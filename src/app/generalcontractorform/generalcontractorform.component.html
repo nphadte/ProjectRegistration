@@ -1,19 +1,18 @@
 <h4>General Contractor</h4>
 <!-- /*name, address, phone, email, company_name, city, state, zip_code, website */ -->
-<form [formGroup]="generalContractorForm">
+<form [formGroup]="generalContractorForm"  class="form-group" autocomplete="on" >
   <!--
     name: new FormControl(''),
     address: new FormControl(''),
     phone: new FormControl(''),
     email: new FormControl(''),
-    companyname: new FormControl(''),
+    company: new FormControl(''),
     city: new FormControl(''),
     state: new FormControl(''),
-    zipcode: new FormControl(''),
+    zip: new FormControl(''),
     website: new FormControl(''),
    -->
-  <div class="ui-inputgroup">
-    <i class="fa fa-user"></i>
+  <div ><i class="fa fa-user"></i>
     <label>
       Name:
       <input class="ui-inputgroup-addon" type="text" formControlName="name">
@@ -24,26 +23,27 @@
   <label>Phone:
     <p-inputMask class="ui-inputgroup-addon" mask="(999) 999-9999" formControlName="phone"  placeholder="(999) 999-9999"></p-inputMask>
   </label>
+  <label> Email address:
+      <input class="ui-inputgroup-addon" type="email" formControlName="email">
+    </label>
   </div>
   <div>
-    <label> Email address:
-      <input class="ui-inputgroup-addon" type="text" formControlName="email">
-    </label>
     <label>
       Company Name:
-      <input type="text" formControlName="company">
+      <input class="ui-inputgroup-addon" type="text" formControlName="company">
     </label>
     <label> city:
       <input class="ui-inputgroup-addon" type="text" formControlName="city">
+    </label>
+    <label> state:
+      <input class="ui-inputgroup-addon" type="text" formControlName="state">
     </label>
     <label>
       zipcode:
       <input class="ui-inputgroup-addon" type="text" formControlName="zip">
     </label>
     <label> website:
-      <input type="text" formControlName="website">
+      <input class="ui-inputgroup-addon" type="text" formControlName="website">
     </label>
   </div>
 </form>
-<div>
-</div>
