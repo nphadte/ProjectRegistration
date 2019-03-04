@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/primeng';
 import { CalendarModule} from 'primeng/primeng';
 import { InputMask } from 'primeng/primeng';
@@ -15,7 +16,6 @@ import { ProjectetaformComponent } from './projectetaform/projectetaform.compone
 import { InventorysourceformComponent } from './inventorysourceform/inventorysourceform.component';
 import { TiledistributorformComponent } from './tiledistributorform/tiledistributorform.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { ReactiveFormsModule} from '@angular/forms';
 import { MatButtonModule, MatFormFieldModule, MatOptionModule, MatSelectModule, MatInputModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
