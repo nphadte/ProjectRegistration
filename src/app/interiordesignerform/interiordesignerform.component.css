@@ -1,15 +1,6 @@
 h4{
-    color: brown;
-    font-size: 5ppx
-}
-.interiordesignerform{
-    align-items: stretch;
-    background-color: aquamarine;
-    border:crimson;
+  color: red;
 }
 .container{
-  /*  background-color: aquamarine; */
-    border: brown;
-    border-block-end-width: 2cm;
-    background-color: burlywood;
+    background-color:darkturquoise;
 }
