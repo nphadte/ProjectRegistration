@@ -21,4 +21,7 @@ export class ProjectetaformComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngOnSubmit() {
+    console.log(this.projectetaForm);
+  }
 }

@@ -25,4 +25,7 @@ export class ProjectdetailsformComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngOnSubmit() {
+    console.log(this.projectdetailsForm);
+  }
 }

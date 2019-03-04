@@ -29,4 +29,7 @@ export class TilecontractorformComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+    console.log(this.tilecontractorForm);
+  }
 }

@@ -28,4 +28,7 @@ export class GeneralcontractorformComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+    console.log(this.generalContractorForm);
+  }
 }

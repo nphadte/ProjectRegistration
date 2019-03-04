@@ -27,4 +27,7 @@ export class ArchitectformComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+    console.log(this.architectForm);
+  }
 }

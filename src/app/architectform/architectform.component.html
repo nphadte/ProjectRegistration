@@ -1,5 +1,5 @@
 <!--name, address, phone, email, company_name, city, state, zip_code, website -->
-<form [formGroup]=" architectForm" class="container" autocomplete="on">
+<form [formGroup]=" architectForm" class="container" autocomplete="on"  (ngSubmit)="onSubmit()">
     <h2> Architect </h2>
     <div class="container" fxLayout fxLayout.xs="row" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
     <div class="item item-1" fxFlex="20%" >

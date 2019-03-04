@@ -25,4 +25,8 @@ export class InteriordesignerformComponent implements OnInit {
    constructor() { }
 
   ngOnInit() {}
+
+  onSubmit() {
+    console.log( this.interiorDesignerForm);
+  }
 }
