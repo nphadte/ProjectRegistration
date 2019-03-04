@@ -1,3 +1,17 @@
-<p>
-  inventorysourceform works!
-</p>
+<form [formGroup]="inventorysourceForm" class="container" autocomplete="on">
+  <h2>Inventory Source</h2>
+  <div fxLayout="row">
+      <div class="item item-1" fxFlex="50%">
+        <mat-form-field>
+          <input matInput type="text" formControlName="torontoinventory">
+        </mat-form-field>
+      </div>
+      <div class="item item-2" fxFlex="50%">
+        <mat-form-field>
+          <input matInput type="text" formControlName="directimport">
+        </mat-form-field>
+      </div>
+  </div>
+</form>
+
+

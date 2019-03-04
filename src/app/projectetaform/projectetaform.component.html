@@ -1,3 +1,29 @@
-<p>
-  projectetaform works!
-</p>
+<form [formGroup]="projectetaForm" class="container" autocomplete="on">
+  <h2>Project ETA</h2>
+  <div fxLayout="row">
+<div class="item item-1" fxFlex="30">
+  <mat-form-field>
+    <input matInput="projectstart" [matDatepicker]="projectstart" formControlName="projectstart"
+      placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="projectstart"></mat-datepicker-toggle>
+    <mat-datepicker #projectstart></mat-datepicker>
+  </mat-form-field>
+</div>
+<div class="item item-2" fxFlex="30%">
+  <mat-form-field>
+    <input matInput="tileinstall" [matDatepicker]="tileinstall" formControlName="tileinstall"
+      placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="tileinstall"></mat-datepicker-toggle>
+    <mat-datepicker #tileinstall></mat-datepicker>
+  </mat-form-field>
+</div>
+<div class="item item-3" fxFlex="40%">
+  <mat-form-field>
+    <input matInput="completion" [matDatepicker]="completion" formControlName="completion" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="completion"></mat-datepicker-toggle>
+    <mat-datepicker #completion></mat-datepicker>
+  </mat-form-field>
+</div>
+</div></form>
+
+
