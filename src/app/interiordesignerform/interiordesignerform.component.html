@@ -1,54 +1,57 @@
-<h4>Interior Designer</h4>
-<div class="container" fxLayout fxLayout.xs="row" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+<form [formGroup]="interiorDesignerForm" class="container"  autocomplete="on">
+    <h4>Interior Designer</h4>
+    <div  fxLayout="row" >
     <div class="item item-1" fxFlex="20%" >
         <mat-form-field>
-        <input matInput type="text" placeholder="Name">
+        <input matInput type="text" formControlName="name" placeholder="Name">
     </mat-form-field>
     </div>
-    <div class="item item-2" fxFlex="50%" >
+    <div class="item item-2" fxFlex="30%" >
         <mat-form-field>
-            <input matInput type="text" placeholder="Address">
+            <input matInput type="text"  formControlName="address" placeholder="Address">
         </mat-form-field>
     </div>
     <div class="item item-3" fxFlex="20">
         <mat-form-field>
-            <input matInput type="text" placeholder="Phone">
+            <input matInput type="text" formControlName="phone" placeholder="Phone">
             <mat-hint>(999) 999-9999</mat-hint>
             <mat-error>only digits </mat-error>
         </mat-form-field>
     </div>
-    <div class="item item-4" fxFlex="25%">
+    <div class="item item-4" fxFlex="30%">
         <mat-form-field>
-            <input matInput type="email" placeholder="Your email">
+            <input matInput type="email"  formControlName="email" placeholder="Your email">
             <mat-hint>should be a valid email format</mat-hint>
         </mat-form-field>
     </div>
 </div>
-<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
-    <div class="item item-5"  fxFlex="25%" >
+
+<div class="container" fxLayout="row">
+    <div class="item item-1"  fxFlex="25%" >
         <mat-form-field>
-            <input matInput type="text" placeholder="Company Name">
+            <input matInput type="text"  formControlName="company" placeholder="Company Name">
         </mat-form-field>
     </div>
-    <div class="item item-6" fxFlex="10%">
+    <div class="item item-2" fxFlex="10%">
         <mat-form-field>
-            <input matInput type="text" placeholder="city">
+            <input matInput type="text"  formControlName="city">
         </mat-form-field>
     </div>
-    <div class="item item-7" fxFlex="10%" >
+    <div class="item item-3" fxFlex="10%" >
         <mat-form-field>
-            <input matInput type="text" placeholder="State">
+            <input matInput type="text" formControlName="state" placeholder="State">
         </mat-form-field>
   
     </div>
-    <div class="item item-8" fxFlex="15%">
+    <div class="item item-4" fxFlex="15%">
         <mat-form-field>
-            <input matInput type="text" placeholder="zip">
+            <input matInput type="text" formControlName="zip"  placeholder="zip">
         </mat-form-field>
     </div>
-    <div class="item item-9" fxFlex>
+    <div class="item item-5" fxFlex>
         <mat-form-field>
-            <input matInput type="text" placeholder="website">
+            <input matInput type="text" formControlName="website"  placeholder="website">
         </mat-form-field>
     </div>
-</div>
+    </div>
+</form>

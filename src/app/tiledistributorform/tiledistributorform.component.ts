@@ -10,7 +10,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class TiledistributorformComponent implements OnInit {
 
   /*name, address, phone, email, companyname, city, state, zipcode, website */
-  architectForm = new FormGroup({
+  tileDistributorForm = new FormGroup({
     name: new FormControl(''),
     address: new FormControl(''),
     phone: new FormControl(''),

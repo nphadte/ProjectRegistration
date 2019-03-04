@@ -1,52 +1,58 @@
-<hr>
-<h4> Architect </h4>
 <!--name, address, phone, email, company_name, city, state, zip_code, website -->
-<div class="ui-g ui-fluid">
-  <!-- name -->
-  <div class="ui-inputgroup">
-    <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-    <input type="text" pInputText placeholder="name">
-  </div>
-  <!-- address -->
-  <div class="ui-inputgroup">
-    <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-    <input type="text" pInputText placeholder="address">
-  </div>
-  <!-- phone -->
-  <div class="ui-g-12 ui-md-6 ui-lg-4">
-    <span>Phone Ext</span>
-    <p-inputMask mask="(999) 999-9999? x99999" [(ngModel)]="phone" placeholder="(999) 999-9999? x99999"></p-inputMask>
-  </div>
-  <!-- email -->
-  <div class="ui-g-12 ui-md-6 ui-lg-4">
-    <span>Email address</span>
-    <p-inputMask mask="*@*" [(ngModel)]="email" placeholder="*@*" ></p-inputMask>
-  </div>
-  <!-- company_name -->
-  <div class="ui-inputgroup">
-    <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-    <input type="text" pInputText placeholder="company_name">
-  </div>
-  <!-- city -->
-  <div class="ui-inputgroup">
-    <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-    <input type="text" pInputText placeholder="city">
-  </div>
-  <!-- state -->
-  <div class="ui-inputgroup">
-    <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-    <input type="text" pInputText placeholder="state">
-  </div>
-  <!-- zip code -->
-  <div class="ui-inputgroup">
-    <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-    <input type="text" pInputText placeholder="zipcode">
-  </div>
-  <!-- website -->
-  <div class="ui-g-12 ui-md-4">
-    <div class="ui-inputgroup">
-      <span class="ui-inputgroup-addon">www</span>
-      <input type="text" pInputText placeholder="Website">
+<form [formGroup]=" architectForm" class="container" autocomplete="on">
+    <h4> Architect </h4>
+    <div class="container" fxLayout fxLayout.xs="row" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+    <div class="item item-1" fxFlex="20%" >
+        <mat-form-field>
+        <input matInput type="text" formControlName="name" placeholder="Name">
+    </mat-form-field>
     </div>
-  </div></div>
-  <hr>
+    <div class="item item-2" fxFlex="50%" >
+        <mat-form-field>
+            <input matInput type="text"  formControlName="address" placeholder="Address">
+        </mat-form-field>
+    </div>
+    <div class="item item-3" fxFlex="20">
+        <mat-form-field>
+            <input matInput type="text" formControlName="phone" placeholder="Phone">
+            <mat-hint>(999) 999-9999</mat-hint>
+            <mat-error>only digits </mat-error>
+        </mat-form-field>
+    </div>
+    <div class="item item-4" fxFlex="25%">
+        <mat-form-field>
+            <input matInput type="email"  formControlName="email" placeholder="Your email">
+            <mat-hint>should be a valid email format</mat-hint>
+        </mat-form-field>
+    </div>
+</div>
+
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+    <div class="item item-5"  fxFlex="25%" >
+        <mat-form-field>
+            <input matInput type="text"  formControlName="company" placeholder="Company Name">
+        </mat-form-field>
+    </div>
+    <div class="item item-6" fxFlex="10%">
+        <mat-form-field>
+            <input matInput type="text"  formControlName="city">
+        </mat-form-field>
+    </div>
+    <div class="item item-7" fxFlex="10%" >
+        <mat-form-field>
+            <input matInput type="text" formControlName="state" placeholder="State">
+        </mat-form-field>
+  
+    </div>
+    <div class="item item-8" fxFlex="15%">
+        <mat-form-field>
+            <input matInput type="text" formControlName="zip"  placeholder="zip">
+        </mat-form-field>
+    </div>
+    <div class="item item-9" fxFlex>
+        <mat-form-field>
+            <input matInput type="text" formControlName="website"  placeholder="website">
+        </mat-form-field>
+    </div>
+    </div>
+</form>
