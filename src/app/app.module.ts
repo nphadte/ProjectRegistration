@@ -16,8 +16,10 @@ import { ProjectetaformComponent } from './projectetaform/projectetaform.compone
 import { InventorysourceformComponent } from './inventorysourceform/inventorysourceform.component';
 import { TiledistributorformComponent } from './tiledistributorform/tiledistributorform.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatButtonModule, MatFormFieldModule, MatOptionModule, MatSelectModule, MatInputModule } from '@angular/material';
+import { MatButtonModule, MatFormFieldModule, MatOptionModule} from '@angular/material';
+import {  MatSelectModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ProjectdetailsformComponent } from './projectdetailsform/projectdetailsform.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ProjectetaformComponent,
     InventorysourceformComponent,
     TiledistributorformComponent,
-    InputMask
+    InputMask,
+    ProjectdetailsformComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ReactiveFormsModule,
     MatOptionModule,
     MatSelectModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

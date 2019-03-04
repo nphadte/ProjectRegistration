@@ -24,7 +24,5 @@ export class InteriordesignerformComponent implements OnInit {
 
    constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

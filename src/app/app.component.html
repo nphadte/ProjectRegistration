@@ -5,44 +5,9 @@
 </div>
 <br>
 <hr>
-<hr>
-<div class="ui-g-12 ui-md-4">
-  <h4>Date</h4>
-  <p-calendar [(ngModel)]="date1"  [showIcon]="true"></p-calendar>
-</div>
-<!-- company_name -->
-<div class="ui-inputgroup">
-  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-  <input type="text" pInputText placeholder="Project name">
-</div>
-<!-- address -->
-<div class="ui-inputgroup">
-  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-  <input type="text" pInputText placeholder="address">
-</div>
-<!-- city -->
-<div class="ui-inputgroup">
-  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-  <input type="text" pInputText placeholder="city">
-</div>
-<!-- state -->
-<div class="ui-inputgroup">
-  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-  <input type="text" pInputText placeholder="state">
-</div>
-<!-- zip code -->
-<div class="ui-inputgroup">
-  <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-  <input type="text" pInputText placeholder="zipcode">
-</div>
-<div >
+<app-projectdetailsform></app-projectdetailsform>
 <app-tiledistributorform></app-tiledistributorform>
-</div>
-<div>
-<app-generalcontractorform></app-generalcontractorform>
-</div>
-<div>
 <app-architectform></app-architectform>
-  <app-interiordesignerform></app-interiordesignerform>
-</div>
+<app-interiordesignerform></app-interiordesignerform>
+<app-generalcontractorform></app-generalcontractorform>
 <router-outlet></router-outlet>
