@@ -9,7 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class InventorysourceformComponent implements OnInit {
 
-  inventorysourceForm = new FormGroup({
+    inventorysourceForm = new FormGroup({
     torontoinventory: new FormControl(''),
     directimport: new FormControl('')
   });

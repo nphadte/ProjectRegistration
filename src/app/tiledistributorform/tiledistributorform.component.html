@@ -1,11 +1,11 @@
 <hr>
 <!--name, address, phone, email, company_name, city, state, zip_code, website -->
-<form [formGroup]="tileDistributorForm"  class="container" autocomplete="on">
+<form [formGroup]="tileDistributorForm"  class="container" autocomplete="on" (ngSubmit)="onSubmit()">
   <h2> Tile Distributor </h2>
   <div fxLayout="row">
     <div class="item item-1" fxFlex="20%">
       <mat-form-field>
-        <input matInput type="text" formControlName="name" placeholder="Name">
+        <input matInput type="text" formControlName="name" placeholder="Name" class="form-control">
       </mat-form-field>
     </div>
     <div class="item item-2" fxFlex="30%">
@@ -22,12 +22,11 @@
     </div>
     <div class="item item-4" fxFlex="30%">
       <mat-form-field>
-        <input matInput type="email" formControlName="email" placeholder="Your email">
+        <input matInput type="email" formControlName="email" placeholder="email address">
         <mat-hint>should be a valid email format</mat-hint>
       </mat-form-field>
     </div>
   </div>
-
   <div class="container" fxLayout="row">
     <div class="item item-1" fxFlex="25%">
       <mat-form-field>
@@ -43,7 +42,6 @@
       <mat-form-field>
         <input matInput type="text" formControlName="state" placeholder="State">
       </mat-form-field>
-
     </div>
     <div class="item item-4" fxFlex="15%">
       <mat-form-field>
@@ -54,6 +52,9 @@
       <mat-form-field>
         <input matInput type="text" formControlName="website" placeholder="website">
       </mat-form-field>
+    </div>
+    <div  class="item item-6" fxFlex>
+    <button mat-button color="primary" type="submit">S</button>
     </div>
   </div>
 </form>

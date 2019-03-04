@@ -4,3 +4,11 @@ color: red;
 .container{
     background-color:darkturquoise;
 }
+.item item-1{
+    color: aquamarine;
+    border: brown;
+}
+.item item-2{
+    color: brown;
+    border: coral;
+}
