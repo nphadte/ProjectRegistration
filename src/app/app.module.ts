@@ -20,6 +20,9 @@ import { MatButtonModule, MatFormFieldModule, MatOptionModule} from '@angular/ma
 import {  MatSelectModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectdetailsformComponent } from './projectdetailsform/projectdetailsform.component';
+import { HeaderComponent } from './header/header.component';
+import { SuccessComponent } from './success/success.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { ProjectdetailsformComponent } from './projectdetailsform/projectdetails
     InventorysourceformComponent,
     TiledistributorformComponent,
     InputMask,
-    ProjectdetailsformComponent
+    ProjectdetailsformComponent,
+    HeaderComponent,
+    SuccessComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
