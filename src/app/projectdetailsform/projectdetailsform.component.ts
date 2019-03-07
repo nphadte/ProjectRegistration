@@ -18,6 +18,9 @@ export class ProjectdetailsformComponent implements OnInit {
     city: new FormControl(''),
     state: new FormControl(''),
     zip: new FormControl(''),
+    projectstart: new FormControl(''),
+    tileinstall: new FormControl(''),
+    completion: new FormControl(''),
   });
 
   constructor() { }

@@ -1,16 +1,18 @@
-<form   [formGroup]="projectdetailsForm"   class="container"  fxLayout="row" autocomplete="on" (ngSubmit)="onSubmit()">
- <div class="item item-1" fxFlex="20%">
+<form  class=container  [formGroup]="projectdetailsForm"   (ngSubmit)="onSubmit()">
+  <h2>Project Details</h2>
+ <div class="row1"  fxLayout="row" autocomplete="on">
+  <div class="item item-1"  fxFlex="20%">
+        <mat-form-field>
+          <input matInput ="projdate" [matDatepicker]="projdate" formControlName="projdate" placeholder="Project date">
+          <mat-datepicker-toggle matSuffix [for]="projdate"></mat-datepicker-toggle>
+          <mat-datepicker #projdate></mat-datepicker>
+          </mat-form-field>
+    </div>
+    <div class="item item-2" fxFlex="20">
       <mat-form-field>
-        <input matInput ="projdate" [matDatepicker]="projdate" formControlName="projdate" placeholder="Project date">
-        <mat-datepicker-toggle matSuffix [for]="projdate"></mat-datepicker-toggle>
-        <mat-datepicker #projdate></mat-datepicker>
-        </mat-form-field>
-   </div>
-  <div class="item item-2" fxFlex="20">
-    <mat-form-field>
-      <input matInput type="text" formControlName="name" placeholder="Project Name" >
-   </mat-form-field>
-  </div>  
+        <input matInput type="text" formControlName="name" placeholder="Project Name" >
+    </mat-form-field>
+    </div>  
   <div class="item item-3" fxFlex="20%">
     <mat-form-field>
       <input matInput type="text" formControlName="address" placeholder="Address">
@@ -31,7 +33,38 @@
     <input matInput type="text" formControlName="zip" placeholder="zip">
   </mat-form-field>
 </div>
-<div class="item item-7" fxFlex>
+</div>
+<div class="row2" fxLayout="row" autocomplete="on">
+<div class="item item-7" fxFlex="30">
+  <mat-form-field>
+    <input matInput="projectstart" [matDatepicker]="projectstart" formControlName="projectstart"
+      placeholder="Project Start date">
+    <mat-datepicker-toggle matSuffix [for]="projectstart"></mat-datepicker-toggle>
+    <mat-datepicker #projectstart></mat-datepicker>
+    <mat-hint>Project Start</mat-hint>
+  </mat-form-field>
+</div>
+<div class="item item-8" fxFlex="30%">
+  <mat-form-field>
+    <input matInput="tileinstall" [matDatepicker]="tileinstall" formControlName="tileinstall"
+      placeholder="Tile Install date">
+    <mat-datepicker-toggle matSuffix [for]="tileinstall"></mat-datepicker-toggle>
+    <mat-datepicker #tileinstall></mat-datepicker>
+    <mat-hint>Tile Install</mat-hint>
+  </mat-form-field>
+</div>
+<div class="item item-9" fxFlex="40%">
+  <mat-form-field>
+    <input matInput="completion" [matDatepicker]="completion" formControlName="completion"
+      placeholder="Tennacy/Completion date">
+    <mat-datepicker-toggle matSuffix [for]="completion"></mat-datepicker-toggle>
+    <mat-datepicker #completion></mat-datepicker>
+    <mat-hint>Tennacy/Completion</mat-hint>
+  </mat-form-field>
+</div>
+
+<div class="item item-10" fxFlex>
     <button mat-button color="primary" type="S">S</button>
+  </div>
   </div>
 </form>
