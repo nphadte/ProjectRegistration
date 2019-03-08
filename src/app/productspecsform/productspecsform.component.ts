@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SelectItem } from 'primeng/api';
 
 @Component({
   selector: 'app-productspecsform',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductspecsformComponent implements OnInit {
 
-  constructor() { }
+  UM: string[];
+
+  warehouse: string[];
+  filtercrireria: string[];
+
+  constructor() {
+    this.UM = ['Sales UM', 'Pieces(PCS)', 'Boxes (BXS)', 'Skids (SKD)'];
+
+    this.warehouse = ['1' , '2'];
+
+    this.filtercrireria = ['A' , 'B'];
+  }
 
   ngOnInit() {
+    this.UM = ['Sales UM', 'Pieces(PCS)', 'Boxes (BXS)', 'Skids (SKD)'];
+
+    this.warehouse = ['1', '2'];
+
+    this.filtercrireria = ['A', 'B'];
   }
 
 }
