@@ -1,60 +1,50 @@
-<form [formGroup]="interiorDesignerForm" class="container"  autocomplete="on" (ngSubmit)="onSubmit()">
-    <h2>Interior Designer</h2>
-    <div  fxLayout="row" >
-    <div class="item item-1" fxFlex="20%" >
-        <mat-form-field>
-        <input matInput type="text" formControlName="name" placeholder="Name">
-    </mat-form-field>
+<h2>Interior Designer</h2>
+<form [formGroup]="interiorDesignerForm"  (ngSubmit)="onSubmit(interiorDesignerForm.value)">
+<div class="ui-g ui-fluid"  autocomplete="on" >
+    <div class="ui-g-12 ui-lg-3 ui-g-nopad">
+        <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+        <input type="text" formControlName="name" placeholder="Name">
+        </div>
     </div>
-    <div class="item item-2" fxFlex="30%" >
-        <mat-form-field>
-            <input matInput type="text"  formControlName="address" placeholder="Address">
-        </mat-form-field>
+    <div class="ui-g-12 ui-lg-3" >
+           <input type="text"  formControlName="address" placeholder="Address">
     </div>
-    <div class="item item-3" fxFlex="20">
-        <mat-form-field>
-            <input matInput type="text" formControlName="phone" placeholder="Phone">
-            <mat-hint>(999) 999-9999</mat-hint>
-            <mat-error>only digits </mat-error>
-        </mat-form-field>
+    <div class="ui-g-12 ui-lg-3">
+            <p-inputMask mask="999-99-9999"  formControlName="phone" placeholder="999-999-9999"></p-inputMask>
     </div>
-    <div class="item item-4" fxFlex="30%">
-        <mat-form-field>
-            <input matInput type="email"  formControlName="email" placeholder="email address">
-            <mat-hint>should be a valid email format</mat-hint>
-        </mat-form-field>
+    <div class="ui-g-12 ui-lg-3">
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon">email</span>
+            <input type="email" formControlName="email" placeholder="email address">
+        </div>
     </div>
 </div>
 
-<div class="container" fxLayout="row">
-    <div class="item item-1"  fxFlex="25%" >
-        <mat-form-field>
-            <input matInput type="text"  formControlName="company" placeholder="Company Name">
-        </mat-form-field>
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-2">
+            <input type="text"  formControlName="company" placeholder="Company Name">
     </div>
-    <div class="item item-2" fxFlex="10%">
-        <mat-form-field>
-            <input matInput type="text"  formControlName="city" placeholder="City">
-        </mat-form-field>
+    <div class="ui-g-12 ui-md-2">
+            <input type="text"  formControlName="city" placeholder="City">
     </div>
-    <div class="item item-3" fxFlex="10%" >
-        <mat-form-field>
-            <input matInput type="text" formControlName="state" placeholder="State">
-        </mat-form-field>
-  
+    <div class="ui-g-12 ui-md-2">
+            <input type="text" formControlName="state" placeholder="State">
     </div>
-    <div class="item item-4" fxFlex="15%">
-        <mat-form-field>
-            <input matInput type="text" formControlName="zip"  placeholder="zip">
-        </mat-form-field>
+    <div class="ui-g-12 ui-md-2">
+            <input type="text" formControlName="zip"  placeholder="zip">
+        </div>
+ 
+<div class="ui-g-12 ui-md-2">
+    <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon">www</span>
+        <input type="text" formControlName="website" placeholder="Website">
     </div>
-    <div class="item item-5" fxFlex>
-        <mat-form-field>
-            <input matInput type="text" formControlName="website"  placeholder="website">
-        </mat-form-field>
-    </div>
-    <div class="item item-6" fxFlex>
-        <button mat-button color="primary" type="submit">S</button>
+</div>
+
+
+    <div class="ui-g-12 ui-md-2">
+        <button color="primary" type="submit">S</button>
     </div>
     </div>
 </form>

@@ -39,7 +39,7 @@ import { DisplayComponent } from './display/display.component';
     ProjectdetailsformComponent,
     HeaderComponent,
     SuccessComponent,
-    DisplayComponent
+    DisplayComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,7 +58,7 @@ import { DisplayComponent } from './display/display.component';
     MatSelectModule,
     FlexLayoutModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

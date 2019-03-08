@@ -2,9 +2,8 @@
 /*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
 @import "~primeicons/primeicons.css";
 @import "~primeng/resources/themes/nova-light/theme.css";
-/*@import "~primeng/resources/themes/nova-colored/theme.css";
-@import "~primeng/resources/themes/nova-dark/theme.css";*/
+@import "~primeng/resources/themes/nova-colored/theme.css";
+@import "~primeng/resources/themes/nova-dark/theme.css";
 @import "~primeng/resources/primeng.min.css";
-/* indigo-pink.css is the Material stylesheet */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
