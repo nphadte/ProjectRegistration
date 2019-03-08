@@ -1,10 +1,27 @@
 <app-header></app-header>
-<app-projectdetailsform></app-projectdetailsform>
-<app-tiledistributorform></app-tiledistributorform>
-<app-architectform></app-architectform>
-<app-interiordesignerform></app-interiordesignerform>
-<app-generalcontractorform></app-generalcontractorform>
-<app-tilecontractorform></app-tilecontractorform>
+<p-accordion>
+    <p-accordionTab  header="Project Details">
+            <app-projectdetailsform></app-projectdetailsform>
+    </p-accordionTab>
+    <p-accordionTab header="Tile Distributor">
+            <app-tiledistributorform></app-tiledistributorform>
+    </p-accordionTab>
+
+    <p-accordionTab header="Architect Details">
+            <app-architectform></app-architectform>
+    </p-accordionTab>
+
+    <p-accordionTab header="Interior Designer">
+            <app-interiordesignerform></app-interiordesignerform>
+    </p-accordionTab>
+
+    <p-accordionTab header="General Contratcor">
+            <app-generalcontractorform></app-generalcontractorform>
+    </p-accordionTab>
+    <p-accordionTab header="Tile Contratcor">
+            <app-tilecontractorform></app-tilecontractorform>
+    </p-accordionTab>
+</p-accordion>
 <app-productspecsform></app-productspecsform>
 <app-inventorysourceform></app-inventorysourceform>
 <router-outlet></router-outlet>

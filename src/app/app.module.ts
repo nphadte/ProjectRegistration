@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/primeng';
 import { CalendarModule} from 'primeng/primeng';
 import { InputMask } from 'primeng/primeng';
+import { AccordionModule } from 'primeng/accordion';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArchitectformComponent } from './architectform/architectform.component';
@@ -23,6 +24,7 @@ import { ProjectdetailsformComponent } from './projectdetailsform/projectdetails
 import { HeaderComponent } from './header/header.component';
 import { SuccessComponent } from './success/success.component';
 import { DisplayComponent } from './display/display.component';
+
 
 @NgModule({
   declarations: [
@@ -59,6 +61,7 @@ import { DisplayComponent } from './display/display.component';
     FlexLayoutModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    AccordionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
