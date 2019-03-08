@@ -1,6 +1,14 @@
 h2{
   color: red;
+  height: 1px;
 }
 .container{
-    background-color: bisque
+    background-color: bisque;
+    height: 165px;
+}
+.row1{
+    height: 65px;
+ }
+.row2{
+    height: 65px;
 }

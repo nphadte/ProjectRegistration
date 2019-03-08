@@ -1,14 +1,18 @@
 h2{
-color: red;
+  color: red;
+  height: 1px;
 }
 .container{
-    background-color:darkturquoise;
+    background-color:whitesmoke;
+    height: 165px;
 }
-.item item-1{
-    color: aquamarine;
-    border: brown;
+.row1{
+    height: 65px;
+ }
+.row2{
+    height: 65px;
 }
-.item item-2{
-    color: brown;
-    border: coral;
+h2{
+  color: red;
+  height: 1px;
 }
