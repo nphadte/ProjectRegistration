@@ -19,7 +19,7 @@ import { InventorysourceformComponent } from './inventorysourceform/inventorysou
 import { TiledistributorformComponent } from './tiledistributorform/tiledistributorform.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatButtonModule, MatFormFieldModule, MatOptionModule} from '@angular/material';
-import {  MatSelectModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { MatSelectModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectdetailsformComponent } from './projectdetailsform/projectdetailsform.component';
 import { HeaderComponent } from './header/header.component';
