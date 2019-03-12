@@ -11,7 +11,8 @@ export class ArchitectformComponent implements OnInit {
 
   /*name, address, phone, email, companyname, city, state, zipcode, website */
   architectForm = new FormGroup({
-    name: new FormControl(''),
+    firstname: new FormControl(''),
+    lastname: new FormControl(''),
     address: new FormControl(''),
     phone: new FormControl(''),
     email: new FormControl(''),
