@@ -14,19 +14,13 @@ export class ProductspecsformComponent implements OnInit {
   filtercrireria: string[];
 
   constructor() {
-    this.UM = ['Sales UM', 'Pieces(PCS)', 'Boxes (BXS)', 'Skids (SKD)'];
+    this.UM = ['Pieces(PCS)', 'Boxes (BXS)'];
 
-    this.warehouse = ['Canada - Toronto(ALL)', 'Canada - Toronto(Vaughan)', 'Canada - Toronto(Caledon)' , 'Turkey - Aliga'];
-
-    this.filtercrireria = ['All Items' , 'Active Items'];
   }
 
   ngOnInit() {
-    this.UM = ['Sales UM', 'Pieces(PCS)', 'Boxes (BXS)', 'Skids (SKD)'];
+    this.UM = ['Pieces(PCS)', 'Boxes (BXS)'];
 
-    this.warehouse = ['1', '2'];
-
-    this.filtercrireria = ['A', 'B'];
   }
 
 }

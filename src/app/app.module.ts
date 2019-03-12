@@ -25,6 +25,7 @@ import { ProjectdetailsformComponent } from './projectdetailsform/projectdetails
 import { HeaderComponent } from './header/header.component';
 import { SuccessComponent } from './success/success.component';
 import { DisplayComponent } from './display/display.component';
+import { LoginformComponent } from './loginform/loginform.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { DisplayComponent } from './display/display.component';
     HeaderComponent,
     SuccessComponent,
     DisplayComponent,
+    LoginformComponent,
   ],
   imports: [
     BrowserModule,
