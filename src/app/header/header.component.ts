@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  title = 'Project Management Form';
+  title = "Customer      Projects      Specification      Portal";
   constructor() { }
 
   ngOnInit() {

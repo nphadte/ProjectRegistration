@@ -11,7 +11,8 @@ export class InteriordesignerformComponent implements OnInit {
 
   /*name, address, phone, email, companyname, city, state, zipcode, website */
   interiorDesignerForm = new FormGroup({
-    name: new FormControl(''),
+    firstname: new FormControl(''),
+    lastname: new FormControl(''),
     address: new FormControl(''),
     phone: new FormControl(''),
     email: new FormControl(''),
