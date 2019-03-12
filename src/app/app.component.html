@@ -1,32 +1,23 @@
 <app-header></app-header>
 <p-accordion>
     <!--<p-accordionTab  header="Project Details" [selected]="true">-->
-        <p-accordionTab header="1. Project Details"   selected="true">
-            <app-projectdetailsform></app-projectdetailsform>
+    <p-accordionTab header="1. Project Details"   selected="true">
+        <app-projectdetailsform></app-projectdetailsform>
     </p-accordionTab>
-    <!--
-    <p-accordionTab header="Tile Distributor">
-            <app-tiledistributorform></app-tiledistributorform>
-    </p-accordionTab>
-     -->
     <p-accordionTab header="2. Architect Details">
-            <app-architectform></app-architectform>
+        <app-architectform></app-architectform>
     </p-accordionTab>
-
     <p-accordionTab header="3. Interior Designer">
-            <app-interiordesignerform></app-interiordesignerform>
+        <app-interiordesignerform></app-interiordesignerform>
     </p-accordionTab>
-
     <p-accordionTab header="4. General Contratcor">
-            <app-generalcontractorform></app-generalcontractorform>
+        <app-generalcontractorform></app-generalcontractorform>
     </p-accordionTab>
     <p-accordionTab header="5. Tile Contratcor">
-            <app-tilecontractorform></app-tilecontractorform>
+        <app-tilecontractorform></app-tilecontractorform>
     </p-accordionTab>
-<p-accordionTab header="6. Product Specification Details" selected="true">
+    <p-accordionTab header="6. Product Specification Details" selected="true">
         <app-productspecsform></app-productspecsform>
-</p-accordionTab>
+    </p-accordionTab>
 </p-accordion>
-
-<!--<app-inventorysourceform></app-inventorysourceform>-->
 <router-outlet></router-outlet>
