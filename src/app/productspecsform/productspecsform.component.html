@@ -1,6 +1,9 @@
 <!-- search the catalogue by Item-code ( drop-down) or Description keyword or ( Reference code ) -->
 <form >
-  <div class="ui-g ui-fluid" autocomplete="on">
+  <div>
+
+  </div>
+  <div class="ui-g ui-fluid" autocomplete="on" >
      <div class="ui-inputgroup">
      <div class="ui-g-12 ui-lg-6 ui-g-nopad">
         <input type="text" pInputText placeholder="Item code">
@@ -14,6 +17,25 @@
     <div class="ui-g-12 ui-lg-3">
       <div class="ui-inputgroup">
         <p-dropdown [options]="UM"   placeholder="Unit of Measure: SF/Pieces"></p-dropdown>
+      </div>
+    </div>
+    <div class="ui-g" >
+      <div class="ui-g-12">
+        <p-checkbox  binary="true"></p-checkbox>
+      </div>
+    </div>
+ 
+    <div class="ui-g" style="width:250px;margin-bottom:10px">
+      <div class="ui-g-12">
+      <p-slider  [(ngModel)]="val1"  [min]="0" [max]="100"></p-slider>
+      <h4 class="first">% Domestic Imports: {{val1}}</h4>
+      </div>
+    </div>
+
+    <div class="ui-g" style="width:250px;margin-bottom:10px">
+      <div class="ui-g-12">
+       <p-slider  [(ngModel)]="val2"  [min]="0" [max]="100"></p-slider>
+        <h4 class="first">% Direct Imports: {{val2}}</h4>
       </div>
     </div>
   </div>

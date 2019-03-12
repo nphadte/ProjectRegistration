@@ -26,6 +26,8 @@ import { HeaderComponent } from './header/header.component';
 import { SuccessComponent } from './success/success.component';
 import { DisplayComponent } from './display/display.component';
 import { LoginformComponent } from './loginform/loginform.component';
+import { CheckboxModule } from 'primeng/checkbox';
+import { SliderModule } from 'primeng/slider';
 
 
 @NgModule({
@@ -66,6 +68,8 @@ import { LoginformComponent } from './loginform/loginform.component';
     MatNativeDateModule,
     AccordionModule,
     DropdownModule,
+    CheckboxModule,
+    SliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

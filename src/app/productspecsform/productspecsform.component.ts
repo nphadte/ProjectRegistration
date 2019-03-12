@@ -10,8 +10,9 @@ export class ProductspecsformComponent implements OnInit {
 
   UM: string[];
 
-  warehouse: string[];
-  filtercrireria: string[];
+  val1: number;
+
+  val2: number;
 
   constructor() {
     this.UM = ['Pieces(PCS)', 'Boxes (BXS)'];
@@ -20,7 +21,5 @@ export class ProductspecsformComponent implements OnInit {
 
   ngOnInit() {
     this.UM = ['Pieces(PCS)', 'Boxes (BXS)'];
-
   }
-
 }
