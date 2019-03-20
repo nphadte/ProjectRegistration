@@ -25,20 +25,29 @@ import { ProjectdetailsformComponent } from './projectdetailsform/projectdetails
 import { HeaderComponent } from './header/header.component';
 import { SuccessComponent } from './success/success.component';
 import { DisplayComponent } from './display/display.component';
-import { LoginformComponent } from './loginform/loginform.component';
 import { CheckboxModule } from 'primeng/checkbox';
 import { SliderModule } from 'primeng/slider';
-import { SigninComponent } from './auth/signin/signin.component';
-import { SignupComponent } from './auth/signup/signup.component';
-import { HomecomponentComponent } from './homecomponent/homecomponent.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AuthService } from './auth/auth.service';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+
+const config = {
+  apiKey: 'AIzaSyB92IQF3Bvtdoelvj4Ea9XPQEhyHHn_FYE',
+  authDomain: 'authenticationmodule-e2364.firebaseapp.com',
+  databaseURL: 'https://authenticationmodule-e2364.firebaseio.com',
+  projectId: 'authenticationmodule-e2364',
+  storageBucket: 'authenticationmodule-e2364.appspot.com',
+  messagingSenderId: '295202537509'
+};
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: 'home', component: HomecomponentComponent },
-  { path: 'login', component: LoginformComponent }
+  { path: 'home2', component: HomeComponent },
+  { path: 'login', component: LoginComponent }
 ];
-
 
 @NgModule({
   declarations: [
@@ -56,10 +65,9 @@ const routes: Routes = [
     HeaderComponent,
     SuccessComponent,
     DisplayComponent,
-    LoginformComponent,
-    SigninComponent,
-    SignupComponent,
-    HomecomponentComponent,
+    HomeComponent,
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,9 +91,15 @@ const routes: Routes = [
     DropdownModule,
     CheckboxModule,
     SliderModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireAuthModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+function newFunction() {
+  return 'authenticationmodule-e2364.appspot.com';
+}
